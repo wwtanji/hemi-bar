@@ -10,13 +10,16 @@
   <meta property="og:locale" content="sk_SK">
   <meta property="og:title" content="Hemi Bar Nitra | Rum &amp; Cigars, Cocktails, Cuban &amp; Latin">
   <meta property="og:description" content="Mostná 227/32, Nitra. Rezervácie na 0948 051 052.">
+  <meta property="og:image" content="assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Otvorená debnička na cigary s nápisom Hemi, we run this town">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Yellowtail&family=Courier+Prime:wght@400;700&family=Instrument+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="motion.css">
   <script defer src="script.js"></script>
-  <script defer src="motion.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,78 +53,117 @@
   <a class="skip-link" href="#co">Preskočiť na obsah</a>
 
   <header class="topbar">
+    <a class="topbar-logo" href="#top" aria-label="Hemi Bar, začiatok stránky">Hemi</a>
     <nav class="topbar-nav" aria-label="Hlavná navigácia">
       <a href="#co">Čo nájdeš</a>
       <a href="#akcia">Na akciu</a>
       <a href="#ucet">Účet</a>
+      <a class="button button-amber topbar-book" href="tel:+421948051052">Rezervovať stôl</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="poster">
-      <img class="poster-leaf poster-leaf-a" src="assets/leaf.svg" width="330" height="200" alt="" aria-hidden="true">
-      <img class="poster-leaf poster-leaf-b" src="assets/leaf.svg" width="330" height="200" alt="" aria-hidden="true">
-      <img class="poster-leaf poster-leaf-c" src="assets/leaf.svg" width="330" height="200" alt="" aria-hidden="true">
-      <svg class="badge" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
-        <defs>
-          <path id="badge-circle" d="M100,100 m-76,0 a76,76 0 1,1 152,0 a76,76 0 1,1 -152,0"/>
-        </defs>
-        <circle cx="100" cy="100" r="96" fill="none" stroke="currentColor" stroke-width="2"/>
-        <circle cx="100" cy="100" r="58" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 5"/>
-        <text class="badge-text"><textPath href="#badge-circle" textLength="470" lengthAdjust="spacing">we run this town • Hemi Bar Nitra • rum &amp; cigars •</textPath></text>
-        <text class="badge-center" x="100" y="112" text-anchor="middle">H</text>
-      </svg>
-      <h1 class="poster-logo">Hemi<span class="poster-logo-sign">we run this town</span><span class="visually-hidden"> Bar Nitra</span></h1>
-      <p class="poster-lines">
-        <span>Rum &amp; Cigars</span>
-        <span>Cocktails</span>
-        <span>Cuban &amp; Latin</span>
-      </p>
-      <div class="poster-info">
-        <p class="poster-status" data-open-status>Otváracie hodiny nižšie</p>
-        <p class="poster-where">Mostná 227/32, Nitra. Otvorené od utorka do soboty.</p>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="status" data-open-status>Otváracie hodiny nižšie</p>
+        <h1 class="hero-title">Rum, <em>koktejly</em> a kubánska nálada na Mostnej</h1>
+        <p class="hero-lede">Hemi Bar, Mostná 227/32, Nitra. Rum &amp; Cigars, Cocktails, Cuban &amp; Latin. Otvorené od utorka do soboty.</p>
         <div class="actions">
           <a class="button button-amber" href="tel:+421948051052">Rezervovať stôl: 0948 051 052</a>
           <a class="button button-line" href="https://www.google.com/maps/search/?api=1&amp;query=Hemi+Bar+Mostná+227/32+Nitra" rel="noopener">Otvoriť mapu</a>
         </div>
       </div>
+      <svg class="cigar-box" viewBox="0 0 560 500" role="img" aria-label="Otvorená debnička na cigary s nápisom Hemi, we run this town a siedmimi cigarami s červenými páskami">
+        <defs>
+          <linearGradient id="cigar-leaf" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8a5528"/>
+            <stop offset="0.55" stop-color="#5e3517"/>
+            <stop offset="1" stop-color="#3d210e"/>
+          </linearGradient>
+        </defs>
+        <rect class="cigar-box-lid" x="50" y="8" width="460" height="196" rx="6"/>
+        <rect class="cigar-box-label" x="74" y="26" width="412" height="158" rx="4"/>
+        <rect class="cigar-box-frame" x="82" y="34" width="396" height="142" rx="2"/>
+        <rect class="cigar-box-frame-inner" x="90" y="42" width="380" height="126" rx="2"/>
+        <text class="cigar-box-tagline" x="280" y="76" text-anchor="middle">Rum &amp; Cigars</text>
+        <text class="cigar-box-logo" x="280" y="136" text-anchor="middle">Hemi</text>
+        <text class="cigar-box-sign" x="280" y="158" text-anchor="middle">we run this town</text>
+        <rect class="cigar-box-body" x="20" y="190" width="520" height="300" rx="8"/>
+        <path class="cigar-box-grain" d="M28 204V480M532 204V480M40 486H520"/>
+        <rect class="cigar-box-tray" x="44" y="212" width="472" height="262" rx="4"/>
+        <g>
+          <rect class="cigar-body" x="56" y="222" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="227" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="120" y="221" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="135" cy="237" r="5"/>
+        </g>
+        <g>
+          <rect class="cigar-body" x="56" y="258" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="263" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="150" y="257" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="165" cy="273" r="5"/>
+        </g>
+        <g>
+          <rect class="cigar-body" x="56" y="294" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="299" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="105" y="293" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="120" cy="309" r="5"/>
+        </g>
+        <g>
+          <rect class="cigar-body" x="56" y="330" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="335" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="135" y="329" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="150" cy="345" r="5"/>
+        </g>
+        <g>
+          <rect class="cigar-body" x="56" y="366" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="371" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="165" y="365" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="180" cy="381" r="5"/>
+        </g>
+        <g>
+          <rect class="cigar-body" x="56" y="402" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="407" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="115" y="401" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="130" cy="417" r="5"/>
+        </g>
+        <g>
+          <rect class="cigar-body" x="56" y="438" width="448" height="30" rx="15"/>
+          <rect class="cigar-shine" x="74" y="443" width="414" height="4" rx="2"/>
+          <rect class="cigar-band" x="140" y="437" width="30" height="32" rx="2"/>
+          <circle class="cigar-band-dot" cx="155" cy="453" r="5"/>
+        </g>
+      </svg>
     </section>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>RUM &amp; CIGARS<i class="marquee-sep"></i>COCKTAILS<i class="marquee-sep"></i>CUBAN &amp; LATIN<i class="marquee-sep"></i>RUM &amp; CIGARS<i class="marquee-sep"></i>COCKTAILS<i class="marquee-sep"></i>CUBAN &amp; LATIN<i class="marquee-sep"></i></span>
-        <span>RUM &amp; CIGARS<i class="marquee-sep"></i>COCKTAILS<i class="marquee-sep"></i>CUBAN &amp; LATIN<i class="marquee-sep"></i>RUM &amp; CIGARS<i class="marquee-sep"></i>COCKTAILS<i class="marquee-sep"></i>CUBAN &amp; LATIN<i class="marquee-sep"></i></span>
-      </div>
-    </div>
 
     <div class="tile-band" aria-hidden="true"></div>
 
     <section class="list" id="co">
       <h2 class="visually-hidden">Čo nájdeš v Hemi</h2>
-      <article class="list-row" data-reveal>
-        <h3>Rum</h3>
+      <article class="list-row">
+        <h3 class="band">Rum</h3>
         <p>Rumová karta a barmani, ktorí sa v nej vyznajú. Opýtaj sa, čo ti naleje.</p>
       </article>
-      <article class="list-row" data-reveal>
-        <h3>Koktejly</h3>
+      <article class="list-row">
+        <h3 class="band">Koktejly</h3>
         <p>Klasiky a večery s hosťujúcimi barmanmi.</p>
       </article>
-      <article class="list-row" data-reveal>
-        <h3>Cuban &amp; Latin</h3>
+      <article class="list-row">
+        <h3 class="band">Cuban &amp; Latin</h3>
         <p>Kubánska a latino nálada. Tematické večery, napríklad Día de los Muertos.</p>
       </article>
       <p class="list-menu placeholder">[DOPLNIŤ] rumová a koktejlová karta s cenami</p>
     </section>
 
     <section class="event" id="akcia">
-      <h2 data-reveal>Bar na tvojej akcii</h2>
+      <h2>Bar na tvojej akcii</h2>
       <p>Hemi vieš pozvať aj k sebe. Zavolaj a dohodneme, ako to bude vyzerať.</p>
       <p class="placeholder-on-amber">[DOPLNIŤ] podmienky, kapacita a cena pre externé akcie</p>
       <a class="button button-dark" href="tel:+421948051052">Zavolať 0948 051 052</a>
     </section>
 
     <section class="tab" id="ucet">
-      <div class="receipt" data-reveal="fade" role="group" aria-label="Otváracie hodiny a kontakt">
+      <div class="receipt" role="group" aria-label="Otváracie hodiny a kontakt">
         <p class="receipt-head">Hemi Bar Nitra</p>
         <p class="receipt-sub">Mostná 227/32, 949 01 Nitra</p>
         <dl class="hours">
@@ -130,7 +172,7 @@
           <div data-days="5 6"><dt>Piatok – sobota</dt><dd>18:00 – 02:00</dd></div>
           <div data-days="0 1"><dt>Nedeľa, pondelok</dt><dd>zatvorené</dd></div>
         </dl>
-        <p class="receipt-status" data-open-status>Otváracie hodiny vyššie</p>
+        <p class="status receipt-status" data-open-status>Otváracie hodiny vyššie</p>
         <p class="receipt-line">Rezervácie: <a href="tel:+421948051052">0948 051 052</a></p>
         <p class="receipt-line"><a href="https://www.google.com/maps/place/Hemi+Bar/@48.3155273,18.0904256,17z" rel="noopener">4,5 z 5 · 319 hodnotení na Google</a></p>
         <p class="receipt-thanks">Ďakujeme!</p>
@@ -148,25 +190,15 @@
   <div class="tile-band" aria-hidden="true"></div>
 
   <footer class="footer">
-    <p class="footer-social">
+    <p class="footer-links">
       <a href="https://www.instagram.com/hemibarnitra/" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/search/pages?q=Hemi%20bar%20Nitra" rel="noopener">Facebook</a>
+      <a href="ochrana-udajov.html">Ochrana údajov</a>
     </p>
     <p class="footer-note">Návrh webstránky — [DOPLNIŤ názov štúdia]. Nejde o oficiálnu stránku Hemi Bar.</p>
   </footer>
 
-  <a class="orb" href="tel:+421948051052" rel="noopener" aria-label="Zavolať a rezervovať stôl">
-    <svg class="orb-ring" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
-      <defs>
-        <path id="orb-path" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/>
-      </defs>
-      <text><textPath href="#orb-path" textLength="270" lengthAdjust="spacing">Rezervovať • Zavolať • Rezervovať • Zavolať •</textPath></text>
-    </svg>
-    <svg class="orb-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>
-  </a>
-
   <nav class="dock" aria-label="Rýchle akcie">
-    <a class="button button-amber" href="tel:+421948051052">Zavolať a rezervovať</a>
+    <a class="button button-amber" href="tel:+421948051052">Rezervovať stôl</a>
     <a class="button button-line" href="https://www.google.com/maps/search/?api=1&amp;query=Hemi+Bar+Mostná+227/32+Nitra" rel="noopener">Mapa</a>
   </nav>
 </body>
